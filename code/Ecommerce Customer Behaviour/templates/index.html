@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Satisfaction Predictor</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1> Customer Satisfaction Prediction</h1>
+
+    <form action="/predict" method="post">
+
+        <select name="gender" required>
+            {% for g in genders %}
+            <option value="{{ g }}">{{ g }}</option>
+            {% endfor %}
+        </select>
+
+        <input type="number" name="age" placeholder="Age" required>
+
+        <select name="city" required>
+            {% for c in cities %}
+            <option value="{{ c }}">{{ c }}</option>
+            {% endfor %}
+        </select>
+
+        <select name="membership" required>
+            {% for m in memberships %}
+            <option value="{{ m }}">{{ m }}</option>
+            {% endfor %}
+        </select>
+
+        <input type="number" step="0.01" name="total_spend" placeholder="Total Spend" required>
+        <input type="number" name="items" placeholder="Items Purchased" required>
+        <input type="number" step="0.1" name="rating" placeholder="Average Rating" required>
+
+        <select name="discount">
+            <option value="Yes">Discount Applied</option>
+            <option value="No">No Discount</option>
+        </select>
+
+        <input type="number" name="days" placeholder="Days Since Last Purchase" required>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction %}
+    <div class="result">
+        <h2>Predicted Satisfaction Level</h2>
+        <p>{{ prediction }}</p>
+    </div>
+    {% endif %}
+</div>
+
+</body>
+</html>
