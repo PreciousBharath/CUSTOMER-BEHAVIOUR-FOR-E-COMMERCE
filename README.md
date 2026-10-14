@@ -1,7 +1,7 @@
 <div align="center">
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=800&size=40&duration=3500&pause=1500&color=FF512F&center=true&vCenter=true&width=900&height=70&lines=%F0%9F%9B%92%20E-Commerce%20Customer%20Behaviour" alt="E-Commerce Customer Behaviour"/>
+<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=800&size=26&duration=3500&pause=1500&color=FF512F&center=true&vCenter=true&width=900&height=70&lines=%F0%9F%9B%92%20E-Commerce%20Customer%20Behaviour" alt="E-Commerce Customer Behaviour"/>
 
 <b><i>Understanding and predicting online-shopper behaviour</i></b>
 
